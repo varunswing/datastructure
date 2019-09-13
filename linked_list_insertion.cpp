@@ -76,6 +76,14 @@ int main(){
         cin >> pos;
         if(pos <= 0 || pos > n+1){
             cout << "Position entered is invalid!, Please enter a valid position.";
+        }if(pos == 1){
+            cout << "Enter the integer: " << endl;
+            cin >> val;
+            temp1 = (NODE*)malloc(sizeof(NODE*));
+            temp1->val = val;
+            temp1->next = head;
+            head = temp1;
+            printList(head);
         }else{
             cout << "Enter the integer: " << endl;
             cin >> val;
