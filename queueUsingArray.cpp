@@ -17,13 +17,13 @@ void Insert() {
 }
 
 void Delete() {
-    if (front == - 1 || front > rear) {
+   if (front == - 1 || front > rear) {
       cout<<"Queue Underflow ";
-    return ;
-    } else {
+   return ;
+   } else {
       cout<<"Element deleted from queue is : "<< queue[front] <<endl;
       front++;
-    }
+   }
 }
 
 void Display() {
